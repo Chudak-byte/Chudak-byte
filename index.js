@@ -17,16 +17,16 @@
 // personalMovieDB.movies[a] = b;
 // personalMovieDB.movies[c] = d;
 // console.log(personalMovieDB);
-const num = 50;
+// const num = 50;
 
-switch (num) {
-  case 120:
-    console.log("bad");
-    break;
-  case 51:
-    console.log("good");
-    break;
-  default:
-    console.log("null");
-    break;
-}
+// switch (num) {
+//   case 120:
+//     console.log("bad");
+//     break;
+//   case 51:
+//     console.log("good");
+//     break;
+//   default:
+//     console.log("null");
+//     break;
+// }
