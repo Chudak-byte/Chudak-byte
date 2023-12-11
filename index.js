@@ -130,3 +130,16 @@
 
 // console.log(result)
 // console.log("hello world");
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+// console.log(calc(5, 8));
+// console.log(calc(4, 6));
+// console.log(calc(1, 9));
+
+const calc = (a, b) => {
+  
+  return a + b;
+};
+console.log(calc(4, 7));

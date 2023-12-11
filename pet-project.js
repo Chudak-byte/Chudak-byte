@@ -8,12 +8,33 @@ const personalMovieDB = {
   private: false,
 };
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 1; i++) {
   const a = prompt("Один із останніх переглянутих фільмів", ""),
-        b = prompt("На скільки його оціните?", "");
+    b = prompt("На скільки його оціните?", "");
 
-        personalMovieDB.movies[a] = b;
+  if (
+    a != null &&
+    b != null &&
+    a != "" &&
+    b != "" &&
+    a.length < 50 &&
+    b.length < 50
+  ) {
+    personalMovieDB.movies[a] = b;
+    console.log("Done");
+  } else {
+    console.log("Error");
+    i--; 
+  }
 }
 console.log(personalMovieDB);
 
-console.log("hello world");
+if (personalMovieDB.count <= 10) {
+  console.log('Переглянуто дуже мало фільмів!');
+} else if (personalMovieDB.count > 10 && personalMovieDB.count <= 30) {
+  console.log('Ви класичний глядач!');
+} else if (personalMovieDB.count > 30){
+  console.log('Ви кіноман!');
+} else {
+  console.log('Сталась помилка!');
+};
