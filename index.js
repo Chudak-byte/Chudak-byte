@@ -138,8 +138,23 @@
 // console.log(calc(4, 6));
 // console.log(calc(1, 9));
 
-const calc = (a, b) => {
-  
-  return a + b;
-};
-console.log(calc(4, 7));
+// const calc = (a, b) => {
+
+//   return a + b;
+// };
+// console.log(calc(4, 7));
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+//   return curr * amount;
+// }
+// function promotion(result) {
+//   console.log(result * discount);
+// }
+
+// promotion(convert(500, usdCurr), discount);
+function sayHello(name) {
+return name;
+}
+sayHello("Hello Artem");
