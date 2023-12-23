@@ -1,5 +1,17 @@
 "use srtict";
-const numberOfFilms = +prompt("Яку кількість фільмів ви переглянули?", "");
+
+
+let numberOfFilms;
+
+function start() {
+  numberOfFilms = prompt("Яку кількість фільмів ви переглянули?", "");
+
+  while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+    numberOfFilms = prompt("Яку кількість фільмів ви переглянули?", "");
+  }
+}
+start();
+
 const personalMovieDB = {
   count: numberOfFilms,
   movies: {},
@@ -38,3 +50,12 @@ if (personalMovieDB.count <= 10) {
 } else {
   console.log('Сталась помилка!');
 };
+
+// function showMyDB(privat) {
+//   if (privat === 'false') {
+//     console.log(personalMovieDB);
+//   } else {
+    
+//   }
+
+// }
