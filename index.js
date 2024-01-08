@@ -154,3 +154,61 @@
 // }
 
 // promotion(convert(500, usdCurr), discount);
+
+// function calculateVolumeAndArea(x) {
+//   if (typeof x !== "number" || x < 0 || !Number.isInteger(x)) {
+//     return `При обчисленні сталась помилка`;
+//   }
+//                                             // Task 1 complete
+//   let s = Math.pow(x, 2) * 6;
+//   let v = Math.pow(x, 3);
+//   return `Об'єм куба: ${v}, площа всієї поверхності: ${s}`;
+// }
+// calculateVolumeAndArea(5);
+
+// function getCoupeNumber(x) {
+// if(isNaN(x) || x < 0 || !(Number.isInteger(x))){
+//    return `Ошибка. Проверьте правильность введенного номера места`;
+// }else if(x === 0 || x > 36){
+//    return `Таких мест в вагоне не существует`; // Task 2 coplete
+// }else {
+//    return Math.ceil(x/4);
+// }
+
+// }
+// getCoupeNumber(5)
+
+// function getTimeFromMinutes(x) {
+//   if (isNaN(x) || x < 0 || !(Number.isInteger(x))) {
+//     console.log(`Ошибка, проверьте данные`);
+//   } else if ((x === 0, x <= 59)) {
+//     let hours = Math.floor(x / 60);
+//     let minutes = x % 60;
+//     return `Это ${hours} часов и ${minutes} минут`;
+//   } else if (x <= 119) {
+//     let hours = Math.floor(x / 60);                     //Task 3 complete**
+//     let minutes = x % 60;
+//     return `Это ${hours} час и ${minutes} минут`;
+//   } else if (x <= 299) {
+//     let hours = Math.floor(x / 60);
+//     let minutes = x % 60;
+//     return `Это ${hours} часа и ${minutes} минут`;
+//   } else if (x >= 300 || x <= 600) {
+//     let hours = Math.floor(x / 60);
+//     let minutes = x % 60;
+//     return `Это ${hours} часов и ${minutes} минут`;
+//   }
+// }
+// getTimeFromMinutes(600);
+
+
+function findMaxNumber(a, b, c, d) {
+let result = [a, b, c, d];
+if (typeof result === 'string' && isNaN(result)) {
+    console.log(0);
+} else {
+    console.log(Math.max(a, b, c, d));
+}
+    
+}
+findMaxNumber(4, 1, '5', 12);
