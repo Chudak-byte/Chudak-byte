@@ -229,16 +229,58 @@
 // // console.log(str.trim());
 // console.log(str.trim());
 
-function funct1(n) {
-  if (n = 1) {
-    let genres = 1;
-    console.log(genres);
-  }
-}
-funct1(1)
+// function copy(myObj) {
+//     let objCopy = {};
+//     let key;
 
-function callbackFunction(funct1) {
-    if (n = 1) {
-        console.log(`Succesful`);
-    }
-}
+//     for (key in myObj) {
+//        objCopy[key] = myObj[key];
+//         }
+//         return objCopy; 
+//     }
+
+
+// const numbers = {
+//     a: 54,
+//     b: 12,
+//     c: {
+//         c1: 13,
+//         c2: 75
+//     }
+// };
+// const newNumbers = copy(numbers); Об'єкти та копіювання
+// newNumbers.a = 15;
+// newNumbers.c.c1 = 1;
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const objOne = {
+//     a: 76,
+//     b: 13,
+//     c: {
+//         c1: 1,
+//         c2: 6
+//     }
+// };
+// const objTwo = {
+//     c: {
+//         c1: 2,
+//         c2: 8
+//     },
+//     d: 13
+// };
+
+
+// const objThree = Object.assign(objOne, objTwo);
+// // console.log(objOne);
+// // console.log(objTwo);
+// // console.log(objThree);
+
+
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
+// newArray[0] = 'Artem';
+// console.log(oldArray);
+// console.log(newArray);
+
+
