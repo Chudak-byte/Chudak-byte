@@ -89,7 +89,6 @@
 //     : Array.from({ length }, (_, index) => base * (index + 1)).join("---");
 //     console.log(getMathResult(5, 8));
 
-
 // const str = "test";
 // const arr = [5, 6, 8];
 // console.log(str.toUpperCase());
@@ -98,16 +97,13 @@
 // const fruits = "Some fruit";
 // console.log(fruits.indexOf("i"));
 
-
 // const logg = "hello world";
 // console.log(logg.substr(1, 7));
 
-// const nume = ('12.6px'); 
+// const nume = ('12.6px');
 //   console.log(parseInt(nume))
 
-
 // console.log(Math.round(num));
-
 
 // function num(number) {
 //   if (typeof number === "number") {
@@ -117,8 +113,6 @@
 //   }
 // }
 // num('15.6px');
-
-
 
 // function strings(string) {
 //   if (typeof string === "number") {
