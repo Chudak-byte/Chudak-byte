@@ -201,14 +201,44 @@
 // }
 // getTimeFromMinutes(600);
 
+// function findMaxNumber(a, b, c, d) {
+// let result = [a, b, c, d];
+// if (typeof result === 'string' && isNaN(result)) {
+//     console.log(0);
+// } else {
+//     console.log(Math.max(a, b, c, d));
+// }
 
-function findMaxNumber(a, b, c, d) {
-let result = [a, b, c, d];
-if (typeof result === 'string' && isNaN(result)) {
-    console.log(0);
-} else {
-    console.log(Math.max(a, b, c, d));
+// }
+// findMaxNumber(4, 1, '5', 12);
+
+//TaskNumberFibonacci
+
+// function fibonacci(n) {
+//     if (n <= 1) {
+//       return n;
+//     } else {
+//       return fibonacci(n - 1) + fibonacci(n - 2);
+//     }
+//   }
+
+//   // Приклад використання:
+//   const result = fibonacci(); // Обчислення 5-го числа Фібоначчі
+//   console.log(result)
+// const str = ('  Hello trim');
+// // console.log(str.trim());
+// console.log(str.trim());
+
+function funct1(n) {
+  if (n = 1) {
+    let genres = 1;
+    console.log(genres);
+  }
 }
-    
+funct1(1)
+
+function callbackFunction(funct1) {
+    if (n = 1) {
+        console.log(`Succesful`);
+    }
 }
-findMaxNumber(4, 1, '5', 12);
