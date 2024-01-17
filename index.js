@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // const numberOfFilms = +prompt("Яку кількість фільмів ви переглянули?", "");
 // const personalMovieDB = {
@@ -30,64 +30,150 @@
 //     console.log("null");
 //     break;
 // }
-// Зробити
-// let result = '';
-// const length = 7;
+// let num = 45;
 
-// for (let i = 1; i < length; i++) {
-//   for (let j = 0; j < i; j++) {
-//     result += "*";
+// do {
+//   console.log(num);
+//   num++;
+// }
+// while (num <= 55);
 
+// for (let i = 1; i <= 12; i++) {
+//   if (i === 9) {
+//     continue;
 //   }
-
-//   result += "\n";
+//   console.log(i);
 
 // }
+// for (let i = 0; i <= 3; i++) {
+//   console.log(i);
+//   for (let j = 0; j <= 3; j++) {
+//     console.log(j);
+//   }
+// }
+
+// let result = "";
+// const length = 4;
+
+//  first: for (let i = 1; i < length; i++) {
+//   console.log(`First level: ${i}`);
+//   for (let j = 0; j < i; j++) {
+//     console.log(`Second level: ${j}`);
+//     for (let x = 0; x < j; x++) {
+//       if(x === 2) break first;
+//       console.log(`Third level: ${x}`);
+//     }
+//   }
+
+// }
+// for (let i = 2; i <= 16; i++) {
+//   if (i % 2 === 0) {
+//       continue;
+//   } else {
+//       console.log(i);
+//   }
+// }
+// let i = 2;
+
+// while (i <= 16) {
+//   if (i % 2 === 0) {
+//     i++;
+//     continue;
+//   } else {
+//     console.log(i);
+//   }
+//   i++
+// }
+
+// const arrayOfNumbers = [];
+//   for (let i = 5; i <= 10; i++) {
+//     console.log(i);
+//     var total = arrayOfNumbers.push(i);
+//   }
+// return arrayOfNumbers
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+//   const result = [];
+
+//   for(let i = 0; i < arr.length; i++){
+//     result[i] = arr[i];
+//   }
 // console.log(result);
 
+//   // Не трогаем
+//   return result;
+
+//   for (let i = 0; i <= 6; i++) {  //Самий скорочений варіант
+//     console.log('*'.repeat(i));
+// };
+
 // const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
 
-//     // Пишем решение вот тут
-//     for(let i = 0; i < data.length; i++){
-//         if (typeof(data[i]) === "number") {
-//             data[i] = data[i] * 2;
-//         } else if(typeof(data[i]) === "string") {
-//             data[i] = `${data[i]} - done`;
-//         }
+// const reversed = data.reverse();
+// for(let i = 0; i < data.length; i++){
+//   result[i] = reversed[i];
+// }
+
+// console.log(result);
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) { // Умова рядок i має бути менше дорівнює 5
+//     for (let j = 0; j < lines - i; j++) { // Умова рядок j має бути меншим чим 5 - i
+//         result += " ";
 //     }
-//     console.log(data);
-
-//     // Не трогаем
-//     return data;
-
-// const eurCurr = 42;
-// const usdCurr = 36;
-
-// const convertUsd = (amountUsd, curr) => {
-//   console.log(amountUsd * curr);
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
 // }
 
-// const convertEur = (amountEur, curr) => {
-//   console.log(amountEur * curr);
+// console.log(result)
+// console.log("hello world");
+
+// function calc(a, b) {
+//     return (a + b);
 // }
-// convertUsd(4300, usdCurr);
-// convertEur(5200, eurCurr);
+// console.log(calc(5, 8));
+// console.log(calc(4, 6));
+// console.log(calc(1, 9));
 
-// function returnNeighboringNumbers(number) {
-//   if (number) {
-//                 console.log([number - 1, number, number + 1]);
+// const calc = (a, b) => {
 
-//       }
+//   return a + b;
+// };
+// console.log(calc(4, 7));
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert(amount, curr) {
+//   return curr * amount;
+// }
+// function promotion(result) {
+//   console.log(result * discount);
+// }
+
+// promotion(convert(500, usdCurr), discount);
+
+// function calculateVolumeAndArea(x) {
+//   if (typeof x !== "number" || x < 0 || !Number.isInteger(x)) {
+//     return `При обчисленні сталась помилка`;
 //   }
+//                                             // Task 1 complete
+//   let s = Math.pow(x, 2) * 6;
+//   let v = Math.pow(x, 3);
+//   return `Об'єм куба: ${v}, площа всієї поверхності: ${s}`;
+// }
+// calculateVolumeAndArea(5);
 
-//  returnNeighboringNumbers(5);
-// const getMathResult = (base, length) =>
-//   typeof length !== "number"
-//     ? base
-//     : length <= 0
-//     ? base
-//     : Array.from({ length }, (_, index) => base * (index + 1)).join("---");
-//     console.log(getMathResult(5, 8));
+// function getCoupeNumber(x) {
+// if(isNaN(x) || x < 0 || !(Number.isInteger(x))){
+//    return `Ошибка. Проверьте правильность введенного номера места`;
+// }else if(x === 0 || x > 36){
+//    return `Таких мест в вагоне не существует`; // Task 2 coplete
+// }else {
+//    return Math.ceil(x/4);
+// }
 
 // const str = "test";
 // const arr = [5, 6, 8];
@@ -112,7 +198,7 @@
 //     console.log(parseInt(number));
 //   }
 // }
-// num('15.6px');
+// getTimeFromMinutes(600);
 
 // function strings(string) {
 //   if (typeof string === "number") {
