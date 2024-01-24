@@ -208,3 +208,94 @@
 //   }
 // }
 // strings("Hello world");
+
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",                                         //Lection 36
+//   skills: {
+//     languages: ["ru", "eng"],
+//     js: "20%",
+//     php: "10%",
+//   },
+//   exp: "1 month",
+//   showAgeAndLangs: function (plan) {
+//     const {age} = plan;
+//     const {languages} = plan.skills;
+//     let str = `Мені ${age} і я володію мовами:`
+
+//     languages.forEach(lang => {
+//         str += `${lang.toUpperCase()} `
+//     });
+//     console.log(str);
+//   },
+// };
+// console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+
+// function showExperience(plan) {
+//   const { exp } = plan.skills;
+//   return exp;                           Task 1(19.01)
+// }
+// showExperience(personalPlanPeter);
+
+// function showProgrammingLangs(plan) {
+//     let str = '';
+//     const {programmingLangs} = plan.skills;
+//     for (let key in programmingLangs) {   Task 2(19.01)
+//         str += `Язык ${key} изучен на ${programmingLangs[key]}\n`
+//     }
+
+//     console.log(str);
+// }
+
+// showProgrammingLangs(personalPlanPeter);
+
+// LECTION 37
+//TASK 1
+// const family = ['Artem' , 'Father'];
+// function showFamily(arr) {
+//     let str = '';
+   
+//     arr.length === 0 ? str = `Семья пуста` : str = `Семья состоит из: `;
+//     arr.forEach(members => {
+//         str += `${members} `;
+//     });
+//     console.log(str);
+// }
+// showFamily(family);
+//TASK 2
+// const favoriteCities = ["liSBon", "ROME", "miLan", "Dublin"];
+
+// function standardizeStrings(arr) {
+//   arr.forEach(city => {
+//     console.log(city.toLowerCase());
+//   });
+  
+// }
+// standardizeStrings(favoriteCities);
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+       
+
+//     console.log(str.split('').reverse().join(''));
+// }
+// reverse(someString);
+
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    if (arr.length === 0) {
+        return 'Нет доступных валют'
+    }
+    const isDeletedCurrency=(currency) => missingCurr && currency === missingCurr;
+    const isCurrencyAvailable=(currency) => baseCurrencies.includes(currency) || additionalCurrencies.includes(currency);
+    const availableCurrencies=arr.filter((currency) => !isDeletedCurrency(currency) && isCurrencyAvailable(currency));
+    const result = 'Доступные валюты: \n' + availableCurrencies.join('\n');
+    
+    return result; 
+
+}
+availableCurr(['UAH', 'RUB', 'CNY'], 'CNY')
