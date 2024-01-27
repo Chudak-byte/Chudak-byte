@@ -283,19 +283,19 @@
 // reverse(someString);
 
 
-const baseCurrencies = ['USD', 'EUR'];
-const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
-function availableCurr(arr, missingCurr) {
-    if (arr.length === 0) {
-        return 'Нет доступных валют'
-    }
-    const isDeletedCurrency=(currency) => missingCurr && currency === missingCurr;
-    const isCurrencyAvailable=(currency) => baseCurrencies.includes(currency) || additionalCurrencies.includes(currency);
-    const availableCurrencies=arr.filter((currency) => !isDeletedCurrency(currency) && isCurrencyAvailable(currency));
-    const result = 'Доступные валюты: \n' + availableCurrencies.join('\n');
+// function availableCurr(arr, missingCurr) {
+//     if (arr.length === 0) {
+//         return 'Нет доступных валют'
+//     }
+//     const isDeletedCurrency=(currency) => missingCurr && currency === missingCurr;
+//     const isCurrencyAvailable=(currency) => baseCurrencies.includes(currency) || additionalCurrencies.includes(currency);
+//     const availableCurrencies=arr.filter((currency) => !isDeletedCurrency(currency) && isCurrencyAvailable(currency));
+//     const result = 'Доступные валюты: \n' + availableCurrencies.join('\n');
     
-    return result; 
+//     return result; 
 
-}
-availableCurr(['UAH', 'RUB', 'CNY'], 'CNY')
+// }
+// availableCurr(['UAH', 'RUB', 'CNY'], 'CNY')
